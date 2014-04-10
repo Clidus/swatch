@@ -28,6 +28,9 @@
 						<li id="navHome"><a href="index.php">Home</a></li>
 						<li id="navAbout"><a href="about.php">About</a></li>  
 					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li id="navChangelog"><a href="changelog.php">Changelog</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
