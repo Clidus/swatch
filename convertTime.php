@@ -4,9 +4,9 @@
 	if(isset($_POST['date'])) 
 	{
 		// if post, use selected datetime
-    	$date = new DateTime($_POST['date'] . ' ' . $_POST['time'], new DateTimeZone($_POST['timezone']));
+		$date = new DateTime($_POST['date'] . ' ' . $_POST['time'], new DateTimeZone($_POST['timezone']));
     } else {
-    	// else use current time in London
+		// else use current time in London
 		$date = new DateTime();
 		$date->setTimeZone(new DateTimeZone('Europe/London'));
     }
@@ -42,7 +42,7 @@
 							echo '<option value="' . $key . '">' . str_replace('_',' ',$value) . '</option>';
 						}
 					?>
-                </select>
+				</select>
 			</div>
 
 			<button type="submit" class="btn btn-default">Convert</button>
@@ -61,13 +61,13 @@
 			$seconds = $date->format('s');
 
 			// add hour to get time in Switzerland
-		    $hours = ($hours == 23) ? 0 : $hours + 1;
+			$hours = ($hours == 23) ? 0 : $hours + 1;
 
-		    // time in seconds
-		    $timeInSeconds = ((($hours * 60) + $minutes) * 60) + $seconds;
+			// time in seconds
+			$timeInSeconds = ((($hours * 60) + $minutes) * 60) + $seconds;
 
-		    // calculate beats to two decimal places
-		    $beats = round($timeInSeconds / $secondsInABeat, 0);
+			// calculate beats to two decimal places
+			$beats = round($timeInSeconds / $secondsInABeat, 0);
 		?>
 
 		<div class="timezones">

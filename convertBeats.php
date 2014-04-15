@@ -11,10 +11,10 @@
 		if($beats > 999) $beats = 999;
 
 		// convert beats into seconds
-	    $seconds = $beats * $secondsInABeat;
+		$seconds = $beats * $secondsInABeat;
 
 		// convert to hours, minutes and seconds	    
-	    $hours = floor($seconds / 3600);
+		$hours = floor($seconds / 3600);
 		$minutes = floor(($seconds - ($hours*3600)) / 60);
 		$seconds = floor($seconds % 60);
 
@@ -34,13 +34,13 @@
 		$seconds = $date->format('s');
 
 		// add hour to get time in Switzerland
-	    $hours = ($hours == 23) ? 0 : $hours + 1;
+		$hours = ($hours == 23) ? 0 : $hours + 1;
 
-	    // time in seconds
-	    $timeInSeconds = ((($hours * 60) + $minutes) * 60) + $seconds;
+		// time in seconds
+		$timeInSeconds = ((($hours * 60) + $minutes) * 60) + $seconds;
 
-	    // calculate beats to two decimal places
-	    $beats = round($timeInSeconds / $secondsInABeat, 0);
+		// calculate beats to two decimal places
+		$beats = round($timeInSeconds / $secondsInABeat, 0);
 	}
 
 	// build array of time zones
