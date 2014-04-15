@@ -3,6 +3,14 @@ body {
 }
 
 .beats {
-	font-size: 10vw;
+	font-size: 13vw;
 	text-align: center;
+}
+
+.timezones {
+	text-align: right;
+}
+
+.timezones .row {
+	margin-bottom: 10px;
 }

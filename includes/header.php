@@ -26,6 +26,8 @@
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
 						<li id="navHome"><a href="index.php">Home</a></li>
+						<li id="navConvertTime"><a href="convertTime.php">Time to Beats</a></li>  
+						<li id="navConvertBeats"><a href="convertBeats.php">Beats to Time</a></li>  
 						<li id="navAbout"><a href="about.php">About</a></li>  
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
