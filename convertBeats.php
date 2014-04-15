@@ -24,11 +24,8 @@
 		// create UTC time
 		$date = new DateTime($_POST['date'] . ' ' . $hours . ':' . $minutes . ':' . $seconds, new DateTimeZone('UTC'));
 	} else {
-		// else use current time in London
+		// else use current time in UTC
 		$date = new DateTime();
-		$date->setTimeZone(new DateTimeZone('Europe/London'));
-
-		// convert date time to UTC 
 		$date->setTimeZone(new DateTimeZone('UTC'));
 
 		// get hours, minutes and seconds
