@@ -5,11 +5,11 @@
 	{
 		// if post, use selected datetime
 		$date = new DateTime($_POST['date'] . ' ' . $_POST['time'], new DateTimeZone($_POST['timezone']));
-    } else {
+	} else {
 		// else use current time in London
 		$date = new DateTime();
 		$date->setTimeZone(new DateTimeZone('Europe/London'));
-    }
+	}
 
 	// build array of time zones
 	$timeZones = array(
