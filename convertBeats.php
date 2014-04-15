@@ -8,9 +8,10 @@
 	{
 		// if number of beats was posted
 		$beats = $_POST['beats'];
+		if($beats > 999) $beats = 999;
 
 		// convert beats into seconds
-	    $seconds = $_POST['beats'] * $secondsInABeat;
+	    $seconds = $beats * $secondsInABeat;
 
 		// convert to hours, minutes and seconds	    
 	    $hours = floor($seconds / 3600);
@@ -24,7 +25,8 @@
 		$date = new DateTime($_POST['date'] . ' ' . $hours . ':' . $minutes . ':' . $seconds, new DateTimeZone('UTC'));
 	} else {
 		// else use current time in London
-		$date = new DateTime(date(), new DateTimeZone('Europe/London'));
+		$date = new DateTime();
+		$date->setTimeZone(new DateTimeZone('Europe/London'));
 
 		// convert date time to UTC 
 		$date->setTimeZone(new DateTimeZone('UTC'));

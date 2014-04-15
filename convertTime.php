@@ -7,7 +7,8 @@
     	$date = new DateTime($_POST['date'] . ' ' . $_POST['time'], new DateTimeZone($_POST['timezone']));
     } else {
     	// else use current time in London
-		$date = new DateTime(date(), new DateTimeZone('Europe/London'));
+		$date = new DateTime();
+		$date->setTimeZone(new DateTimeZone('Europe/London'));
     }
 
 	// build array of time zones
