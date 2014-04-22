@@ -7,6 +7,11 @@ body {
 	text-align: center;
 }
 
+.unix {
+	font-size: 4vw;
+	text-align: center;
+}
+
 .timezones {
 	text-align: right;
 }

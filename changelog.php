@@ -5,6 +5,10 @@
 		<h1>Changelog</h1>
 		
 		<div>
+			<p><b>Version 1.2.0 - 2014-04-15</b></p>
+			<ul>
+				<li><b>Feature:</b> Live Unix/Epoch Time clock.</li>
+			</ul>
 			<p><b>Version 1.1.0 - 2014-04-15</b></p>
 			<ul>
 				<li><b>Feature:</b> Convert time to beats page.</li>

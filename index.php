@@ -4,6 +4,7 @@
 	<div class="container">
 		<h1>Swatch Internet Time</h1>
 		<div class="beats">@<span id="swatchTime"></span> .beats</div>
+		<div class="unix">Epoch Time: <span id="unixTime"><?php echo time(); ?></span></div>
 	</div>
 
 	<script src="js/jquery-2.0.3.min.js"></script>

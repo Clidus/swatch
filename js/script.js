@@ -1,5 +1,8 @@
 // calculate the time of the future
 function GetInternetTime() {
+    // increment unix time
+    $('#unixTime').html(parseInt($('#unixTime').text())+1);
+
     // get date in UTC/GMT
     var date = new Date();
     var hours = date.getUTCHours();
