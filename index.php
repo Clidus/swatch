@@ -7,7 +7,7 @@
 		<div class="unix">Epoch Time: <span id="unixTime"><?php echo time(); ?></span></div>
 	</div>
 
-	<script src="js/jquery-2.0.3.min.js"></script>
+	<script src="js/jquery-3.6.0.min.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 	<script src="js/script.js"></script>
 	<script>
